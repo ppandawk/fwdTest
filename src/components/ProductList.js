@@ -3,7 +3,8 @@ const ProductList = ({ productList }) => {
     <>
       {productList.map((product, index) => (
         <div key={index} className="txt-in-box">
-            Your base annual premium is <span className="txt-original">{product.baseAnnualPremium}</span> Bath
+            Your annual premium is <br/>
+            <span className="txt-original">{product.baseAnnualPremium}</span> Bath
         </div>
       ))}
     </>

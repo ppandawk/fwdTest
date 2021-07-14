@@ -61,6 +61,10 @@ body {
   min-height: 40px;
   font-size: 16px;
   background-color: #E67029;
+  margin: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 
   /* transition */
   -webkit-transition: all 0.15s ease-in-out;
@@ -138,7 +142,12 @@ input[type="radio"]:checked {
 }
 
 .form-control{
+  vertical-align: top;
   margin-bottom: 16px;
+  display: inline-block;
+}
+.form-control + .form-control{
+  margin-left: 16px;
 }
 .fc-title{
   color: #E67029;
@@ -158,26 +167,27 @@ input[type="radio"]:checked {
   text-align: center;
 }
 .txt-in-box .txt-original{
-  font-size: 32px;
+  font-size: 40px;
 }
 
 .box{
-  padding: 16px 0;
+  padding: 16px 0 0;
+  margin-bottom: 16px;
 }
 .box-left{
   padding: 0;
   float: left;
-  width: 232px;
+  width: 500px;
 }
 .box-right{
   float: right;
   height: 100%;
   display: flex;
   margin-left: 8px;
-  min-height: 504px;
+  min-height: 427px;
   border-radius: 4px;
   background: #dfdcdc;
-  width: calc(100% - 240px);
+  width: calc(100% - 508px);
 }
 
 .clearfix::after{
